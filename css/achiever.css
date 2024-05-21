@@ -1,0 +1,253 @@
+.body {
+  font-family: 'Inter', sans-serif;
+  background: rgb(20 23 24) fixed center / cover;
+  font-size: 14px;
+  color: black;
+  margin-top: 10px;
+  
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.projcard-container {
+  margin: 25px 0;
+}
+
+.projcard-container,
+.projcard-container * {
+  box-sizing: border-box;
+}
+.projcard-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  max-width: 1000px; 
+  width: 90%; 
+}
+
+.projcard {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid rgb(20 23 24);
+  font-size: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  top: 50px;
+}
+
+.projcard:hover {
+  box-shadow: 0 34px 32px -33px rgb(0, 0, 0);
+  transform: translate(0px, -3px);
+}
+
+.projcard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(-70deg, #0d0c0c, transparent 50%);
+  opacity: 0.07;
+}
+
+.projcard:nth-child(2n)::before {
+  background-image: linear-gradient(-250deg, #100e0e, transparent 50%);
+}
+
+.projcard-innerbox {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;;
+}
+
+.projcard-img {
+  position: absolute;
+  height: 100%;
+  width: 250px;
+  top: 0;
+  left: 0;
+  bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+
+.projcard:hover .projcard-img {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.projcard:hover .projcard-bar {
+  width: 70px;
+}
+
+.projcard-textbox {
+  position: absolute;
+  top: 7%;
+  bottom: 100%;
+  left: 320px;
+  width: calc(100% - 470px);
+  font-size: 17px;
+  color: black;
+}
+
+.projcard:nth-child(2n) .projcard-textbox::before {
+  display: none;
+}
+
+.projcard-textbox::after {
+  display: none;
+  left: initial;
+  right: -55px;
+}
+
+.projcard:nth-child(2n) .projcard-textbox::after {
+  display: block;
+}
+
+.projcard-textbox * {
+  position: relative;
+  bottom: 15px;
+}
+
+.projcard-title {
+  margin-top: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+}
+
+.projcard-subtitle {
+  font-family: 'Inter', sans-serif;
+  color: #888;
+}
+
+.projcard-bar {
+  left: -2px;
+  width: 50px;
+  height: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #000000;
+  transition: width 0.2s ease;
+}
+.projcard-blue .projcard-bar { background-color: green; }
+.projcard-red .projcard-bar { background-color: green; }
+.projcard-green .projcard-bar { background-color: green; }
+.projcard-yellow .projcard-bar { background-color: green; }
+.projcard-orange .projcard-bar { background-color: green; }
+.projcard-brown .projcard-bar { background-color: green; }
+.projcard-grey .projcard-bar { background-color: green; }
+.projcard-customcolor .projcard-bar { background-color: green; }
+.projcard-description {
+  z-index: 10;
+  font-size: 15px;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  bottom: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  h1 {
+    font-size: 3rem;
+    margin-top: 20px; 
+  }
+  
+  /* Project card styles */
+
+  .projcard {
+    position: relative;
+    width: calc(100% - 30px);
+    margin: 10px;
+    height: 1000px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid rgb(20 23 24);
+    font-size: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    top: 10px;
+    margin-bottom: 100px;
+  }
+
+  .projcard.projcard-red {
+    /* Assuming this is a special style for certain project cards */
+    /* If not, you can remove this block or adjust it accordingly */
+    position: relative;
+    width: calc(100% - 20px);
+    margin: 10px;
+    height: 1000px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid rgb(20 23 24);
+    font-size: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    top: 10px;
+    margin-bottom: 75px;
+  }
+  
+  .projcard-img {
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    display: block; /* Ensures proper spacing */
+  }
+  
+  .projcard-textbox {
+    position: absolute;
+    height: auto; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    text-align: center;
+    font-size: 75px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 10px 10px;
+    margin-top: 70px;
+    margin-bottom: 5px;
+  }
+
+  .projcard-innerbox {
+    position: absolute;
+    height: 5px;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    left: 0;;
+  }
+  
+  .projcard-title {
+    font-family: 'Inter', sans-serif;
+    height: 100px;
+    font-size: 24px;
+    margin-top: 430px;
+    margin-bottom: 10px;
+  }
+  
+  .projcard-bar {
+    margin-top: 50px;
+  }
+
+  .projcard-subtitle {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+}

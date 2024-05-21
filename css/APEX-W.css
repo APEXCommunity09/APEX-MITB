@@ -1,0 +1,67 @@
+section {
+  display: flex;
+  justify-content: center; 
+}
+
+.container {
+  max-width: 800px;
+  margin-top: 100px;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: white;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.projcard-bar {
+  width: 50px;
+  height: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: green;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  font-size: 18px;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.linkedin {
+  margin-top: 20px;
+}
+
+.linkedin a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #0077b5;
+}
+
+.linkedin a:hover {
+  text-decoration: underline;
+}
+
+.big-image-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; 
+}
+
+.big-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px; /* Rounded border */
+}

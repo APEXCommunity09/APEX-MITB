@@ -1,0 +1,49 @@
+body {
+  background: rgb(20 23 24) fixed center / cover;
+  text-align: center;
+  color: white; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-box {
+  text-align: center;
+}
+
+.tickgif img {
+  width: 100px; 
+}
+
+.main {
+  margin-top: 20px;
+}
+
+.main h1 {
+  font-size: x-large;
+  color: #ffffff;
+}
+
+.main p {
+  font-size: large;
+  color: #ffffff;
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 768px) {
+  /* Adjust styles for wider screens here */
+}
+
+/* Media query for screens narrower than 480px */
+@media (max-width: 480px) {
+  /* Adjust styles for narrower screens here */
+}
