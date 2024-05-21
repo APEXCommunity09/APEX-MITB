@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase": "^10.8.0",
+    "jquery": "^3.7.1",
+    "mongodb": "^6.3.0"
+  },
+  "name": "apex-website",
+  "description": "<div align=\"center\">   <a href=\"https://hacktoberfest.digitalocean.com/\">     <img        src=\"https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg\"        alt=\"Banner\"        width=\"60%\"/>   </a> </div>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
