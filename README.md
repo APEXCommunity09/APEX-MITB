@@ -1,10 +1,4 @@
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="">
-    <img src="./assets/logo.svg" alt="Logo" width="400" height="250">
-  </a>
-  <h1 align="center">APEX COMMUNITY Website</h1>
+<h1 align="center">APEX COMMUNITY Website</h1>
 </p>
 
 ## APEX Community Website 🔗
